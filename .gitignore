@@ -1,3 +1,10 @@
+#bin
+**/bin/**
+**/bin-obj/**
+
+#vs proj
+**.vcxproj
+
 # Python cache
 __pycache__
 *.pyc
