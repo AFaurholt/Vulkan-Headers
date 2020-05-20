@@ -11,6 +11,15 @@ project "vulkan"
 		"include/vulkan/**.hpp",
 	}
 
+	filter "system:windows"
+		systemversion "latest"
+		staticruntime "On"
+
+		defines
+		{
+			"VK_USE_PLATFORM_WIN32_KHR"
+		}
+
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "on"
